@@ -110,6 +110,8 @@ body {
   }
   footer p a{
     color: white;
+    margin: 0 15px;
+    text-decoration: none;
   }
   /* Skills Progress Bar Styling */
 .skill {
