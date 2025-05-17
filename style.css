@@ -1,128 +1,155 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-  }
-  
-  header {
-    background-color: #007bff;
-    padding: 15px 0;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar li {
-    margin: 0 15px;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 20px;
-    background: #1a1818;
-    color: white;
-  }
-  
-  .profile img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #007bff;
-  }
-  
-  .info {
-    text-align: left;
-    margin: 20px;
-  }
-  
-  .contact-form {
-    margin-top: 100px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .contact-form h2{
-    color: black;
-    font-weight: bold;
-  }
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form input,
-  .contact-form button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  #about p{
-    text-align: justify;
-  }
-  .contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  #skills {
-    background-color: #c7c7c7;
-  }
-  /* #skills ul{
-    text-align: left;
-  } */
-  section {
-    padding: 40px 20px;
-    text-align: left;
-  }
-  
-  .carousel img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  footer {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-    font-weight: bold;
-  }
-  footer p a{
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  /* Skills Progress Bar Styling */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  padding-top: 70px; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 0;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background: #1a1818;
+  color: white;
+}
+
+.profile img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+}
+
+.info {
+  text-align: left;
+  margin: 20px;
+}
+
+.contact-form {
+  margin-top: 100px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#skills {
+  background-color: #c7c7c7;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+#other{
+  background-color: #1a1818;
+  color: white ;
+}
+/* Carousel */
+.carousel {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #c7c7c7;
+  color: #000000;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p a {
+  color: black;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Skills Progress Bar Styling */
 .skill {
   margin-bottom: 20px;
 }
+
 .skill span {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
   text-align: left;
 }
+
 .progress-bar {
   width: 100%;
   background-color: #eee;
@@ -130,38 +157,40 @@ body {
   overflow: hidden;
   height: 20px;
 }
+
 .progress {
   height: 100%;
   background-color: #4CAF50;
   width: 0;
   animation: fillProgress 2s ease-in-out forwards;
 }
+
 @keyframes fillProgress {
-  0% { width: 0; }
-  100% { /* final width will be inline-styled */ }
+  0% {
+    width: 0;
+  }
+  100% {
+    /* final width will be inline-styled */
+  }
 }
 
 /* Service Image Titles */
-.carousel {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .service-box {
   position: relative;
   width: 200px;
 }
+
 .service-box img {
   width: 100%;
   border-radius: 10px;
 }
+
 .service-title {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 5px;
   text-align: center;
